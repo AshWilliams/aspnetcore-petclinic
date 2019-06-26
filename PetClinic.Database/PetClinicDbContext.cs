@@ -7,7 +7,7 @@ using PetClinic.Common.Models.Visits;
 
 namespace PetClinic.Database
 {
-    public class PetClinicDbContext: DbContext, IPetClinicDbContext
+    public class PetClinicDbContext: DbContext
     {
         public DbSet<Specialty> Specialties { get; set; }
         public DbSet<Vet> Vets { get; set; }

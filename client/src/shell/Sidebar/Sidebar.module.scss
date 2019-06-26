@@ -1,0 +1,53 @@
+@import "styles/variables";
+
+.navbar {
+  display: grid;
+  align-content: space-between;
+  background-color: $color-sidebar-background;
+  padding: 0.8rem 1.4rem 0.8rem 0;
+  border-right: 1px solid $color-border;
+}
+
+.navSection {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      background-color: $color-sidebar-nav;
+
+      .navButton {
+        background-color: $color-sidebar-nav-highlight;
+        color: white;
+      }
+    }
+  }
+}
+
+.navButton {
+  display: grid;
+  place-items: center center;
+  cursor: default;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2.4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-sidebar-nav;
+  color: $color-primary-text;
+  text-decoration: none;
+
+  &:hover:not(.active) {
+    background-color: $color-sidebar-nav-highlight;
+  }
+}

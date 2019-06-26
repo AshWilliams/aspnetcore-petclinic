@@ -1,0 +1,36 @@
+$color-primary-text: #403947;
+$color-secondary-text: #6b6475;
+$color-highlight: #d13673;
+$color-link: #1c6caf;
+$color-header-background: #fff;
+$color-main-background: #fbfbfb;
+$color-sidebar-background: #f3f3f3;
+$color-sidebar-nav: #d8d8d8;
+$color-sidebar-nav-highlight: #aaa9a9;
+$color-border: #efeef0;
+
+$font-size-title: 2rem;
+$font-size-normal: 1.6rem;
+$font-size-small: 1.4rem;
+
+$font-family: "'Source Sans Pro', Helvetica, Arial, sans-serif";
+
+@mixin font-title {
+  font-size: $font-size-title;
+  font-weight: 600;
+}
+
+@mixin font-subtitle {
+  font-size: $font-size-normal;
+  font-weight: 600;
+}
+
+@mixin font-normal {
+  font-size: $font-size-normal;
+  font-weight: 400;
+}
+
+@mixin font-small {
+  font-size: $font-size-small;
+  font-weight: 300;
+}

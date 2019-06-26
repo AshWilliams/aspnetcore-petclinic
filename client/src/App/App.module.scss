@@ -1,0 +1,17 @@
+@import "styles/variables";
+
+.appGrid {
+  display: grid;
+  grid-template-columns: 5.6rem 1fr;
+  grid-template-areas: "sidebar-nav main";
+}
+
+.sidebarNav {
+  grid-area: sidebar-nav;
+  display: grid;
+}
+
+.main {
+  grid-area: main;
+  background-color: $color-main-background;
+}
